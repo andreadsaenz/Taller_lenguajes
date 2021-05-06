@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Práctico</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<body background="1.jpg">
+    <h1 align="center">TALLER PRUEBA</h1>
+    <script>
+        var bandera = 1;
+        function boton(){
+            if(bandera == 1){
+                N.style.top = "75px";
+                N.style.left = "700px"
+            }
+            if (bandera == 2){
+                N.style.top= "230px";
+                N.style.left = "500px"
+            }
+            if (bandera == 3){
+                N.style.top= "800px";
+                N.style.left = "320px"
+            }
+            bandera = bandera + 1;
+
+            if(bandera ==4){
+                bandera = 1
+            }
+        }
+
+        
+        function al(){
+            alert("Así es, es muy fácil.")
+        }
+    </script>
+
+    <h2 align = "center">EL TALLER DE LENGUAJES ES MUY SENCILLO Y YA CASI ACABA.</h2>
+    <div id= "N" align= "center">
+        <input  type="button" value= "NO" onmousemove="boton()"/>
+    </div>
+    <div id="Y" class = "c2">
+        <form>
+            <input type = "button" value= "SI" onclick="al()"/>
+        </form>
+    </div>
+</body>
+</html>
